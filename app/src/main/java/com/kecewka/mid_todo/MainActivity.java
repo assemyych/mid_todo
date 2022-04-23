@@ -36,13 +36,9 @@ public class MainActivity extends AppCompatActivity {
         rv = findViewById(R.id.recycler_view);
 
         someArray = new ArrayList<>();
-        someArray.add(new TaskModel("Go do groceries"));
-        someArray.add(new TaskModel("Go do groceries"));
-        someArray.add(new TaskModel("Go do groceries"));
-        someArray.add(new TaskModel("Go do groceries"));
-        someArray.add(new TaskModel("Go do groceries"));
-
-
+        someArray.add(new TaskModel("Get up at 9:00 am"));
+        someArray.add(new TaskModel("Starting to work at 10:00 am"));
+        someArray.add(new TaskModel("Frontend Standup at 14:30 pm"));
 
 
         TaskAdapter taskAdapter = new TaskAdapter(this, someArray);
@@ -70,13 +66,5 @@ public class MainActivity extends AppCompatActivity {
                 imm.hideSoftInputFromWindow(mainLayout.getWindowToken(), 0);
             }
         });
-
-        /*delete_btn = findViewById(R.id.delete_btn);
-        /*delete_btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });*/
     }
 }
